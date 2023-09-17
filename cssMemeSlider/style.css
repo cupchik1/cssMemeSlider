@@ -25,9 +25,25 @@
     width: 15px;
     background-color: #71ABFF;
     border-radius: 50%;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
+.button:hover{
+    background-color: #FFFFFF;
+}
+
+.button:active{
+    background-color: #BCBDBE;
+}
+
+#slideButton1:checked~.text-wrapper .navigation-controls .b1, 
+#slideButton2:checked~.text-wrapper .navigation-controls .b2, 
+#slideButton3:checked~.text-wrapper .navigation-controls .b3, 
+#slideButton4:checked~.text-wrapper .navigation-controls .b4 {
+    box-sizing: border-box;
+    background-color: #25282A;
+    border: 2px solid #71ABFF;
+}
 
 .slides {
     display: flex;
