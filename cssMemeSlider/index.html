@@ -7,31 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="memeSlider">
-        <div class="slides">
-            <figure class="slide-container">
+    <div class="slider-wrapper">
+
+        <div class="slider">
+            
+            <input type="radio" name="sliderRadioButton" id="slideButton1" checked class="hidden">
+            <input type="radio" name="sliderRadioButton" id="slideButton2" class="hidden">
+            <input type="radio" name="sliderRadioButton" id="slideButton3" class="hidden">
+            <input type="radio" name="sliderRadioButton" id="slideButton4" class="hidden">
+
+            <div class="slide-container main-frame">
                 <img src="./assets/img/sliderMeme1.jpg" alt="Funny cat with flattened ears"  class="slide-content"/>
-                <figcaption class="slide-text">How I look on camera or FaceTime</figcaption>
-            </figure>
-            <figure class="slide-container">
+                <p class="slide-text">How I look on camera or FaceTime</p>
+            </div>
+            <div class="slide-container">
                 <img src="./assets/img/sliderMeme2.jpg" alt="Business kitten in a suit"  class="slide-content"/>
-                <figcaption class="slide-text">And it will be true!</figcaption>
-            </figure>
-            <figure class="slide-container">
+                <p class="slide-text">And it will be true!</p>
+            </div>
+            <div class="slide-container">
                 <img src="./assets/img/sliderMeme3.jpg" alt="The cat sits bent over"  class="slide-content"/>
-                <figcaption class="slide-text">It's still pretty good!</figcaption>
-            </figure>
-            <figure class="slide-container">
+                <p class="slide-text">It's still pretty good!</p>
+            </div>
+            <div class="slide-container">
                 <img src="./assets/img/sliderMeme4.jpg" alt="The cat sits in a bag with male abs drawn on it"  class="slide-content"/>
-                <figcaption class="slide-text">Admit it, you need this cat</figcaption>
-            </figure>
+                <p class="slide-text">Admit it, you need this cat</p>
+            </div>
         </div>
-        <div class="navigation">
-            <input type="radio" name="sliderRadioButton" id="radioButton1" checked>
-            <input type="radio" name="sliderRadioButton" id="radioButton2">
-            <input type="radio" name="sliderRadioButton" id="radioButton3">
-            <input type="radio" name="sliderRadioButton" id="radioButton4">
+
+        <div class="navigation-controls">
+            <label for="slideButton1" class="button"></label>
+            <label for="slideButton2" class="button"></label>
+            <label for="slideButton3" class="button"></label>
+            <label for="slideButton4" class="button"></label>
         </div>
+
     </div>   
 </body>
 </html>

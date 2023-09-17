@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.memeSlider{
+.slider-wrapper{
     margin: 20px auto;
     overflow: hidden;
     width: 850px;
@@ -11,23 +11,32 @@
 
     border-radius: 15px;
     background-color: #25282A;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.navigation {
-    position: relative;
-    bottom: 23%;
-    left: 88%;
+
+.button {
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #71ABFF;
+    border-radius: 50%;
+    transition: all 0.3s;
 }
 
-.slides {
+
+.slider {
     display: flex;
     width: 400%;
     height: 100%;
 
 }
 
-.slide-container{
+.slide-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,4 +57,27 @@
  margin-left: 10%;
 
  color: #fff;
+}
+
+.navigation-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5% 10% 5%;
+
+}
+#slideButton1:checked ~ .main-frame {
+    margin-left: 0;
+}
+#slideButton2:checked ~ .main-frame{
+    margin-left: -25%;
+}
+#slideButton3:checked ~ .main-frame{
+    margin-left: -50%;
+}
+#slideButton4:checked ~ .main-frame{
+    margin-left: -75%;
+}
+
+.hidden {
+    display: none;
 }
