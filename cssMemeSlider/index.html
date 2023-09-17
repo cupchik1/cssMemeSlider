@@ -4,25 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Meme Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
+    <div class="slider-wrapper">
+
+        <div class="slider">
+            
+            <input type="radio" name="sliderRadioButton" id="slideButton1" checked class="hidden">
+            <input type="radio" name="sliderRadioButton" id="slideButton2" class="hidden">
+            <input type="radio" name="sliderRadioButton" id="slideButton3" class="hidden">
+            <input type="radio" name="sliderRadioButton" id="slideButton4" class="hidden">
+
+            <div class="slides">
+                <div class="slide-container main-frame">
+                    <img src="./assets/img/sliderMeme1.jpg" alt="Funny cat with flattened ears"  class="slide-content"/>
     
-    <figure>
-        <img src="./assets/img/sliderMeme1.jpg" alt="Funny cat with flattened ears" />
-        <figcaption>How I look on camera or FaceTime</figcaption>
-    </figure>
-    <figure>
-        <img src="./assets/img/sliderMeme2.jpg" alt="Business kitten in a suit" />
-        <figcaption>And it will be true!</figcaption>
-    </figure>
-    <figure>
-        <img src="./assets/img/sliderMeme3.jpg" alt="The cat sits bent over" />
-        <figcaption>It's still pretty good!</figcaption>
-    </figure>
-    <figure>
-        <img src="./assets/img/sliderMeme4.jpg" alt="The cat sits in a bag with male abs drawn on it" />
-        <figcaption>Admit it, you need this cat</figcaption>
-    </figure>
-                        
+                </div>
+                <div class="slide-container">
+                    <img src="./assets/img/sliderMeme2.jpg" alt="Business kitten in a suit"  class="slide-content"/>
+    
+                </div>
+                <div class="slide-container">
+                    <img src="./assets/img/sliderMeme3.jpg" alt="The cat sits bent over"  class="slide-content"/>
+    
+                </div>
+                <div class="slide-container">
+                    <img src="./assets/img/sliderMeme4.jpg" alt="The cat sits in a bag with male abs drawn on it"  class="slide-content"/>
+    
+                </div>
+            </div>
+            <div class="text-wrapper">
+                <div class="text-slider">
+                    <p class="slide-text text1">How I look on camera or FaceTime</p>
+                    <p class="slide-text text2">And it will be true!</p>
+                    <p class="slide-text text3">It's still pretty good!</p>
+                    <p class="slide-text text4">Admit it, you need this cat</p>
+                </div>
+
+                <div class="navigation-controls">
+                    <label for="slideButton1" class="button b1"></label>
+                    <label for="slideButton2" class="button b2"></label>
+                    <label for="slideButton3" class="button b3"></label>
+                    <label for="slideButton4" class="button b4"></label>
+                </div>
+            </div>
+        </div>
+    </div>   
 </body>
 </html>
