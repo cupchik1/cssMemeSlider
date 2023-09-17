@@ -3,29 +3,35 @@
     padding: 0;
 }
 
+.slider {
+    padding-bottom: 10%;
+}
 .slider-wrapper{
-    margin: 20px auto;
+    margin: 5% auto;
     overflow: hidden;
-    width: 850px;
-    height: 520px;
+    max-width: 60%;
 
-    border-radius: 15px;
+    border-radius: 2%;
     background-color: #25282A;
     display: flex;
     flex-direction: column;
 }
 
-
-
 .button {
+	display: block;
+
     cursor: pointer;
-    margin-right: 10px;
-    display: inline-block;
-    height: 15px;
-    width: 15px;
+
+    height: 1em;
+    width: 1em;
+
     background-color: #71ABFF;
-    border-radius: 50%;
-    transition: background-color 0.3s;
+	border-radius: 100%;
+    transition: background-color 0.5s;
+    transition: outline-color 0.5s;
+    border: 0.38em solid rgba(0, 255, 0, 0);
+	background-clip: padding-box;
+
 }
 
 .button:hover{
@@ -40,9 +46,17 @@
 #slideButton2:checked~.text-wrapper .navigation-controls .b2, 
 #slideButton3:checked~.text-wrapper .navigation-controls .b3, 
 #slideButton4:checked~.text-wrapper .navigation-controls .b4 {
-    box-sizing: border-box;
+    background-clip: padding-box;
     background-color: #25282A;
-    border: 2px solid #71ABFF;
+    border: 0.38em solid rgba(0, 255, 0, 0);
+    outline: 0.17em solid #71ABFE;
+    outline-offset: -0.5em;
+}
+#slideButton1:checked~.text-wrapper .navigation-controls .b1:hover,
+#slideButton2:checked~.text-wrapper .navigation-controls .b2:hover, 
+#slideButton3:checked~.text-wrapper .navigation-controls .b3:hover, 
+#slideButton4:checked~.text-wrapper .navigation-controls .b4:hover{
+    outline-color: #FEFEFE;
 }
 
 .slides {
@@ -55,21 +69,21 @@
     flex-direction: column;
     align-items: center;
 
-    padding-top: 15px;
+    padding-top: 1%;
     width: 25%;
 }
 
 
 .slide-container .slide-content {
-    margin-bottom: 25px;
+    margin-bottom:5%;
     width: 90%;
-    border-radius: 15px;
+    border-radius: 2%;
 }
 
 .navigation-controls {
     display: flex;
     margin-right: 4%;
-
+    align-items: center;
 }
 .main-frame {
     transition: all 0.5s;
@@ -104,7 +118,7 @@
 }
 
 .slide-text {
-    font-size: 1.5rem;
+    font-size: 3vw;
     color: #ffffff;
     opacity: 0;
     display: none;
@@ -131,3 +145,18 @@
     display: block;
 }
 
+
+@media (max-width: 700px) {
+    .text-wrapper {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    
+    .navigation-controls{
+        margin: 0 auto;
+    }
+    .text-slider{
+        margin: 0;
+        margin-left: 5%;
+    }
+}
