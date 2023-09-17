@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.memeSlider{
+    margin: 20px auto;
+    overflow: hidden;
+    width: 850px;
+    height: 520px;
+
+    border-radius: 15px;
+    background-color: #25282A;
+}
+
+
+.navigation {
+    position: relative;
+    bottom: 23%;
+    left: 88%;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+
+}
+
+.slide-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 15px;
+    width: 25%;
+}
+
+
+.slide-container .slide-content {
+    margin-bottom: 25px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.slide-text {
+ width: 100%;   
+ margin-left: 10%;
+
+ color: #fff;
+}
